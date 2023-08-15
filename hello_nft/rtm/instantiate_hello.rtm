@@ -1,0 +1,11 @@
+# Withdrawing 50 XRD from the account component
+CALL_METHOD
+    Address("account_sim1cyd08zuxt0kmuddmwlagas6g8g4x65w2sd4dfncfp7dha8augly08k")
+    "lock_fee"
+    Decimal("50"); 
+
+
+CALL_FUNCTION
+    Address("package_sim1p40mzz4yg6n4gefzq5teg2gsts63wmez00826p8m5eslr864fr3648")
+    "HelloNFT"
+    "instantiate_hello";

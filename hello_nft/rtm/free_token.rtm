@@ -1,0 +1,15 @@
+# Withdrawing 50 XRD from the account component
+CALL_METHOD
+    Address("account_sim1cyd08zuxt0kmuddmwlagas6g8g4x65w2sd4dfncfp7dha8augly08k")
+    "lock_fee"
+    Decimal("50"); 
+
+CALL_METHOD
+    Address("component_sim1czcev47f2hh3vd7h4pyulzsjdshdz9qrs24js9t62rlzugdrjmcpml")
+    "free_token"
+    4u64;
+
+CALL_METHOD
+  Address("account_sim1cyd08zuxt0kmuddmwlagas6g8g4x65w2sd4dfncfp7dha8augly08k")
+  "deposit_batch"
+  Expression("ENTIRE_WORKTOP");
